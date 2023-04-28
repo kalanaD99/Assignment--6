@@ -12,6 +12,12 @@
     #order>h6{
         font-size: 12px;
     }
+    #Item>h6{
+        font-size: 12px;
+    }
+    #Item{
+        background-color: #cad7ca;
+    }
     </style>
 
 </head>
@@ -52,7 +58,7 @@
         <hr>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4" style="background-color: #ffecb5">
+                <div class="col-lg-4" style="background-color: #ffecb5;margin-bottom: 10px">
                     <div class="row">
                         <span style="background-color: #ffcd39 ;padding: 10px"> INVOICE</span>
                     </div>
@@ -85,14 +91,22 @@
                                     <input type="text" class="form-control" placeholder="Amal" id="inputName">
                                 </div>
                                 <div class="col-lg-6">
-                                    <label for="inputAddress" class="form-label"> Customer Name:</label>
+                                    <label for="inputAddress" class="form-label"> Customer Address:</label>
                                     <input type="text" class="form-control" placeholder="Panadura" id="inputAddress">
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                    <button type="button" class="btn btn-warning">Update</button>
+                                    <button type="button" class="btn btn-danger">Delete</button>
+                                    <button type="button" class="btn btn-success">Save</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4" style="background-color: slategray">
+                <div class="col-lg-4" style="background-color: slategray;margin-bottom: 10px">
                     <div class="row">
                         <span style="background-color: midnightblue;padding: 10px;color: white">ITEMS</span>
                     </div>
@@ -109,9 +123,11 @@
                                         <option>I004</option>
                                     </select>
                                 </div>
+                                <br>
+                                <br>
                                 <div class="col-lg-6">
                                     <label for="inputDescription" class="form-label">Description :</label>
-                                    <input type="text" class="form-control" id="inputDescription" placeholder="Keerisamba 5Kg">
+                                    <input type="text" class="form-control" id="inputDescription" placeholder="Sugar 1kg">
                                 </div>
                                 <div class="col-lg-6">
                                     <label for="inputUnitPrice" class="form-label">Unit Price :</label>
@@ -133,9 +149,83 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4" style="background-color: lightcoral;margin-bottom: 10px">
+                    <div class="row">
+                        <span style="background-color: #dc3545;padding: 10px;color: white">PURCHASE</span>
+                    </div>
+
+                        <div class="col-lg-6">
+                            <label for="inputCash" class="form-label">Cash :</label>
+                            <input type="number" class="form-control" id="inputCash" placeholder="1000">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="inputDiscount" class="form-label">Discount :</label>
+                            <input type="number" class="form-control" id="inputDiscount" placeholder="10">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="inputBalance" class="form-label">Balance :</label>
+                            <input type="number" class="form-control" id="inputBalance" placeholder="60">
+                        </div>
+                    <form  class="row g-3 summery">
+                        <div class="col-lg-12" style="color: #f3f5f8;font-weight: bold; font-size: 22px">
+                            Total :
+                            <label id="lblTotal">950</label>
+                            Rs/=
+                        </div>
+                        <div class="col-lg-12" style="color: rgba(241,22,22,0.62);font-weight: bold; font-size: 22px">
+                            SubTotal :
+                            <label id="lblSubTotal">940</label>
+                            Rs/=
+                        </div>
+                        <div align="center" class="col-lg-12 center-block" style="margin-bottom: 30px">
+                            <button type="submit" style="font-weight: bold" class="btn btn-danger">Purchase</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <table class="table" style="background-color: #f6f5f5">
+                    <thead class="table-success">
+                    <tr>
+                        <th class="col-3" >Item Code</th>
+                        <th class="col-3">Item Description</th>
+                        <th class="col-2">Price</th>
+                        <th class="col-2">Quantity</th>
+                        <th class="col-2">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="col">I001</td>
+                        <td class="col">Sugar</td>
+                        <td class="col">310.00</td>
+                        <td class="col">2</td>
+                        <td class="col">620.00</td>
+                    </tr>
+                    <tr>
+                        <td class="col"> </td>
+                        <td class="col"> </td>
+                        <td class="col"> </td>
+                        <td class="col"> </td>
+                        <td class="col"> </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
+        <hr>
+    </section>
+    <section id="Item">
+        <h6 style="width: 3px">Home>Item</h6>
+        <hr>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 " style="background-color: #146c43;padding: 10px;color: white">
+                    <span >Item Details</span>
+                </div>
 
+            </div>
+        </div>
     </section>
     </body>
 </html>
